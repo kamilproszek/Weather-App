@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-color: dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(/icons/background.jpg);
+  background-size: cover;
+}
+
+.main-card {
+  background-color: whitesmoke;
+  padding: 2%;
+  border-radius: 5%;
+  width: 22%;
+  background: black;
+  background: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
+  );
+  backdrop-filter: blur(8px);
+  font-size: 150%;
+  color: white;
+}
+
+.weather_icon {
+  width: 22%;
+  height: 45%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  margin-left: 5%;
+  border-radius: 5%;
+  background-color: aliceblue;
+  border-width: 0;
+}
+.button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
+  );
+
+  transition: all 0.15s 0.15s;
+}
+
+.button img {
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.city {
+  color: black;
+  font-weight: bolder;
+}
+.description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+  .main-card {
+    width: 70%;
+  }
+}

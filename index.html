@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-card">
+      <div class="search">
+        <input type="text" id="search-bar" class="search-bar" />
+        <button class="button" onclick="showValue()">
+          <img src="icons/search.png" alt="search icon" />
+        </button>
+      </div>
+      <div class="weather">
+        <h2 class="city" id="city">------</h2>
+        <div class="temp" id="temp">------</div>
+        <img
+          src="https://openweathermap.org/img/wn/01n.png"
+          id="weather_icon"
+          alt="obrazek pogody"
+          class="weather_icon"
+        />
+        <div class="description" id="description">------</div>
+        <div class="humidity" id="humidity">------</div>
+        <div class="wind" id="wind">------</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

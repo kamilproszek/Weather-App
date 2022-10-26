@@ -9,7 +9,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-image: url(/icons/background.png);
+  background-color: #00CCFF;
   background-size: cover;
 }
 

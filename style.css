@@ -3,7 +3,7 @@
 }
 
 body {
-  // background-color: #00CCFF;
+  /* background-color: #00CCFF; */
   background-image: url(/icons/background.jpg);
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 800px) {
   body {
-    //background-color: #00CCFF;
+    /* background-color: #00CCFF; */
     background-image: url(/icons/background.jpg);
   }
   .main-card {

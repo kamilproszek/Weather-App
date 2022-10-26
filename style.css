@@ -1,16 +1,14 @@
 * {
   padding: 0;
-  background-color: lightblue;
 }
 
 body {
-  background-color: dimgray;
+  background-image: url("background.png");
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: lightblue;
   background-size: cover;
 }
 

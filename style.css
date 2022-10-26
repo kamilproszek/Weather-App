@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/icons/sun.png);
+  background-color: #00CCFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +82,7 @@ body {
 
 @media (max-width: 800px) {
   body {
-    background-color: lightblue;
+    background-color: #00CCFF;
   }
   .main-card {
     width: 70%;

@@ -1,5 +1,6 @@
 * {
   padding: 0;
+  background-color: lightblue;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background-color: #00CCFF;
+  background-color: lightblue;
   background-size: cover;
 }
 

@@ -1,92 +1,197 @@
-* {
-  padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  /* background-color: #00CCFF; */
-  background-image: url(/icons/background.jpg);
+  background-color: dimgray;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100%;
   margin: 0;
   background-size: cover;
+  /* background-color: white; */
 }
 
 .main-card {
-  background-color: whitesmoke;
-  padding: 2%;
-  border-radius: 5%;
-  width: 22%;
-  background: black;
-  background: linear-gradient(
-    to right top,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15)
-  );
-  backdrop-filter: blur(8px);
-  font-size: 150%;
+  /* background-image: url("background.jpg"); */
+  background-color: white;
+  display: flex;
+  width: 80%;
+  height: 80%;
+  box-shadow:6px 6px 6px 6px black;
+ 
+}
+
+.enter-city{
+  margin: auto;
+}
+
+.string {
+  font-size: xx-large;
+  margin: auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  color: darkgray;
+}
+
+.left-card {
+  margin-left: 2%;
+  margin-bottom: 8%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 60%;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  width: inherit;
+}
+.temp {
+  font-weight: lighter;
+  font-size: 50px;
   color: white;
 }
 
-.weather_icon {
-  width: 22%;
-  height: 45%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+.city {
+  color: white;
+  font-weight: normal;
+  margin-left: 50px;
+  font-weight: bolder;
+  font-size: 50px;
 }
 
-.button {
+.weather-icon {
+  margin-left: 100px;
   width: 50px;
   height: 50px;
-  margin-left: 5%;
-  border-radius: 5%;
-  background-color: aliceblue;
-  border-width: 0;
 }
-.button:hover {
-  cursor: pointer;
+
+.right-card {
+  background-color: black;
+  width: 40%;
+  backdrop-filter: blur(10px);
   background: linear-gradient(
     to right top,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15)
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.55)
   );
-
-  transition: all 0.15s 0.15s;
+  padding: 10px;
 }
 
-.button img {
-  width: 28px;
-  height: 28px;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+.data {
+  display: flex;
+  height: 13%;
+  width: auto;
 }
 
-.search {
+.search-box {
+  border: solid 3px darkgray;
+  width: 70%;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+}
+.search-box input {
+  border: none;
+  background: none;
+  outline: none;
+  width: inherit;
+  
 }
 
-.search-bar {
-  width: 100%;
-}
-
-.city {
-  color: black;
-  font-weight: bolder;
-}
 .description {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.button {
+  background: none;
+  border: none;
+}
+.button:hover {
+  cursor: pointer;
+}
+.weather-details {
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
+.span-1 {
+  background-color: darkgray;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+}
+.span-2 {
+  background-color: darkgray;
+  width: 100%;
+  height: 1.5px;
+  margin-top: 10px;
+}
+.weather-details-string {
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+::placeholder{
+  color: darkgray;
+  font-size:medium;
+}
 
-@media (max-width: 800px) {
-  body {
-    /* background-color: #00CCFF; */
-    background-image: url(/icons/background.jpg);
+@media (max-width: 900px) {
+
+
+  .left-card{
+    margin-bottom: auto;
+    margin-top: 0;
+    width: auto;
+  
   }
-  .main-card {
-    width: 70%;
+  
+  .main-card{
+    margin-top: 0;
+    padding: 0;
+    display: block;
+    width: 100vh;
+    padding: 10px;
+    height: auto;
+    margin: auto;
+  }
+  .right-card{
+    width:auto;
+    height: auto;
+    margin-top: 27px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin:auto; */
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)
+  );
+    
+  }
+
+  .gif img{
+  width: 200px;
+
+  }
+  .span-1{
+    margin-top: 20px;
+  }
+ 
+  .string{
+    display: none;
+  }
+  .enter-city {
+    margin-top: 0px;
   }
 }
